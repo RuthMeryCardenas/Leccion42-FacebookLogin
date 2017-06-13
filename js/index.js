@@ -1,7 +1,7 @@
 "use strict";
 const render = (root) => {
   root.empty();
-  const wrapper = $("div class='wrapper'></div>");
+  const wrapper = $("<div class='wrapper'></div>");
   wrapper.append(Header());
   if (state.user == null) {
     wrapper.append(Login());
