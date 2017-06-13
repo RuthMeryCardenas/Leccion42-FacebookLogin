@@ -16,5 +16,15 @@
   <script type="text/javascript" src="js/components/dashboard.js"></script>
   <script type="text/javascript" src="js/utils/facebook.js"></script>
   <script type="text/javascript" src="js/index.js"></script>
+  <script type="text/javascript">
+    (function (thisdocument, scriptelement, id) {
+      var js, fjs = thisdocument.getElementsByTagName(scriptelement)[0];
+      if (thisdocument.getElementById(id)) return;
+      js = thisdocument.createElement(scriptelement);
+      js.id = id;
+      js.src = "//connect.facebook.net/en_US/sdk.js";
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, "script", "facebook-jssdk"));
+  </script>
 </body>
 </html>
