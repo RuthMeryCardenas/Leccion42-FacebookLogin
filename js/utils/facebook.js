@@ -7,7 +7,7 @@ window.fbAsyncInit = () => {
   });
 };
 function loginHandler(response) {
-  if (response.status === "connected"); {
+  if (response.status === "connected") {
     state.status = "Conectado";
     FB.api("/me?fields=email,name", user => {
       state.user = user;
